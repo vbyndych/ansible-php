@@ -12,4 +12,4 @@ galaxy_info:
   categories:
   - web
 dependencies:
-  - "https://bitbucket.org/willthames/git-ansible-galaxy,v1.0.0,ansible"
+  - "https://bitbucket.org/yoj/ansible-ansible,v1.0.0,ansible"
