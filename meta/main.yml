@@ -1,0 +1,15 @@
+---
+# Source: https://bitbucket.org/willthames/git-ansible-galaxy
+galaxy_info:
+  author:
+  description: Role for PHP-FPM
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  categories:
+  - web
+dependencies:
+  - "https://bitbucket.org/willthames/git-ansible-galaxy,v1.0.0,ansible"

@@ -1,0 +1,4 @@
+---
+php:
+  workers: 4
+  timezone: Europe/Kiev

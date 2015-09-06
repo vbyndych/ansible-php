@@ -1,0 +1,17 @@
+; a pool called www
+[www]
+user = www-data
+group = www-data
+
+; use a unix domain socket
+listen = /var/run/php5-fpm.sock
+
+listen.owner = www-data
+listen.group = www-data
+listen.mode = 0660
+
+pm = static
+pm.max_children = {{ php.workers }}
+
+php_flag[short_open_tag] = off
+php_admin_value[date.timezone] = {{ php.timezone }}

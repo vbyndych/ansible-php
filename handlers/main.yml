@@ -1,0 +1,4 @@
+---
+- name: Reload PHP-FPM
+  sudo: true
+  service: name=php5-fpm state=restarted

@@ -1,0 +1,17 @@
+---
+- name: Install PHP
+  sudo: true
+  apt: pkg={{item}} state=present
+  with_items:
+    - curl
+    - php5-fpm
+    - php5-intl
+    - php5-cli
+    - php5-curl
+    - php5-mysql
+
+- name: Configure PHP-FPM
+  sudo: true
+  template: src="php-fpm.j2" dest="/etc/php5/fpm/pool.d/www.conf"
+  notify:
+    - Reload PHP-FPM
