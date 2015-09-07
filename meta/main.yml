@@ -11,5 +11,4 @@ galaxy_info:
     - all
   categories:
   - web
-dependencies:
-  - "https://bitbucket.org/yoj/ansible-ansible,v1.0.0,ansible"
+dependencies: []

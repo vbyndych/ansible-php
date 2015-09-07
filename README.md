@@ -6,7 +6,7 @@ This role install and configure PHP-FPM and some other PHP packages to run PHP-b
 Requirements
 ------------
 
-Dosn't have any requirements
+Requires **python-apt** to be installed
 
 Role Variables
 --------------
@@ -16,7 +16,7 @@ Role Variables
 
 Dependencies
 ------------
-This role depends of ansible (basic) role
+This role suggests of ansible (basic) role
 
 Example Playbook
 ----------------
